@@ -10,8 +10,15 @@ Todo es simulado: no hay red, pagos ni base de datos. El estado compartido es
 
 ## Compilar y ejecutar
 
-Se necesita un compilador de C con soporte C11 y pthreads (Linux o macOS).
-Desde esta carpeta:
+Se necesita un compilador de C con soporte C11 y pthreads. En Ubuntu,
+instalar las herramientas de compilación con:
+
+```sh
+sudo apt update
+sudo apt install build-essential
+```
+
+Luego, desde esta carpeta (los mismos comandos también funcionan en macOS):
 
 ```sh
 gcc -std=c11 -Wall -Wextra -pedantic -pthread reservas.c -o reservas.out
